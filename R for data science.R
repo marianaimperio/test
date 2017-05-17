@@ -232,8 +232,14 @@ filter(diamonds, carat > 3)
 
 
 # 5
+library(tidyverse)
+library(dplyr)
+library(nycflights13)
+
 #filter
 flights
 jan1 <- filter (flights, month == 1, day==1)
 
 filter(flights, month == 1, dep_time == 517)
+
+(dec25 <- filter(flights, month == 12, day == 25))
